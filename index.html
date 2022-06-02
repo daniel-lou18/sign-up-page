@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign-up Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container-page">
+    <div class="container-left">
+      <div class="container-banner">
+        <img src="./odin-lined.png" alt="Odin logo" class="logo-image">
+        <div class="logo-text">ODIN</div>
+      </div>
+      <div class="image-source">
+        Photo by <a href="#">John Doe</a> on <a href="https://unsplash.com/">Unsplash</a>
+      </div>
+    </div>
+    <div class="container-right">
+      <div class="container-right-top">
+        <h2>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</h2>
+        <h2>You <em>know</em> you want to.</h2>
+      </div>
+      <div class="container-form">
+        <form action="#" method="post">
+          <h2>Let's do this!</h2>
+          <div class="container-name container form">
+            <p class="first-name form">
+              <label for="first-name">FIRST NAME</label>
+              <input type="text" name="user-first-name" id="first-name" required>
+            </p>
+            <p class="last-name form">
+              <label for="last-name">LAST NAME</label>
+              <input type="text" name="user-last-name" id="last-name" required>
+            </p>
+          </div>
+          <div class="container-email-phone container form">
+            <p class="email form">
+              <label for="email">EMAIL</label>
+              <input type="email" name="user-email" id="email" required>
+            </p>
+            <p class="phone form">
+              <label for="phone">PHONE NUMBER</label>
+              <input type="tel" name="user-phone" id="phone" required>
+            </p>          
+          </div>
+          <div class="container-password container form">
+            <p class="password form">
+              <label for="password">PASSWORD</label>
+              <input type="password" name="user-password" id="password" required>              
+            </p>
+            <p class="password-confirm form">
+              <label for="password-confirm">CONFIRM PASSWORD</label>
+              <input type="password" name="user-password-confirm" id="password-confirm" required>              
+            </p>
+          </div>
+
+        </form>
+      </div>
+      <div class="container-right-bottom">
+        <button type="submit">Create Account</button>
+        <p>Already have an account? <a href="/home/">Log in</a></p>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>
