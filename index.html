@@ -24,26 +24,29 @@
         <h2>You <em>know</em> you want to.</h2>
       </div>
       <div class="container-form">
-        <form action="#" method="post">
+        <form action="#" method="post" id="form-main" name="form-main">
           <h2>Let's do this!</h2>
           <div class="container-name container form">
             <p class="first-name form">
               <label for="first-name">FIRST NAME</label>
-              <input type="text" name="user-first-name" id="first-name" required>
+              <input type="text" name="user-first-name" id="first-name" required minlength="3" maxlength="30">
+              <span class="validity-check"></span>
             </p>
             <p class="last-name form">
               <label for="last-name">LAST NAME</label>
-              <input type="text" name="user-last-name" id="last-name" required>
+              <input type="text" name="user-last-name" id="last-name" required minlength="3" maxlength="30">
+              <span class="validity-check"></span>
             </p>
           </div>
           <div class="container-email-phone container form">
             <p class="email form">
               <label for="email">EMAIL</label>
               <input type="email" name="user-email" id="email" required>
+              <span class="validity-check"></span>
             </p>
             <p class="phone form">
               <label for="phone">PHONE NUMBER</label>
-              <input type="tel" name="user-phone" id="phone" required>
+              <input type="tel" name="user-phone" id="phone">
             </p>          
           </div>
           <div class="container-password container form">
@@ -60,11 +63,12 @@
         </form>
       </div>
       <div class="container-right-bottom">
-        <button type="submit">Create Account</button>
+        <button type="submit" form="form-main" class="submit-button">Create Account</button>
+        <span class="submit-check"></span>
         <p>Already have an account? <a href="/home/">Log in</a></p>
       </div>
     </div>
   </div>
-  
+  <script src="javascripts.js"></script>
 </body>
 </html>

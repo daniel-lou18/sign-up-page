@@ -94,6 +94,7 @@ div.form > p.form {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  position: relative;
 }
 
 label {
@@ -115,7 +116,6 @@ form > div:first-of-type {
 }
 
 .container-right-bottom > button {
-  margin-bottom: 24px;
   background-color: #596D48;
   padding: 12px 48px;
   border: none;
@@ -124,7 +124,14 @@ form > div:first-of-type {
   color: white;
   font-weight: bold;
   font-size: 1rem;
+}
 
+.container-right-bottom > button:hover {
+  cursor: pointer;
+}
+
+.container-right-bottom > button:active {
+  background-color: #7a9662;
 }
 
 input {
@@ -136,7 +143,17 @@ input {
 input:focus {
   outline: none;
   border: 1.5px solid blue;
+  background-color: rgb(250, 250, 250);
   box-shadow: 3px 3px 3px rgb(0 0 0 /0.2);
+}
+
+input:required:valid + span.validity-check::after {
+  position: absolute;
+  bottom: 0;
+  right: -30px;
+  content: '✓';
+  font-size: x-large;
+  color: #596D48;
 }
 
 .container-right-bottom a {
@@ -146,6 +163,10 @@ input:focus {
 
 .container-right-bottom a:link {
   text-decoration: none;
+}
+
+.container-right-bottom p {
+  margin-top: 24px;
 }
 
 .image-source {
@@ -158,4 +179,16 @@ input:focus {
 
 .image-source a {
   color: white;
+}
+
+.pw-not-equal {
+  border-color: crimson;
+}
+
+span.submit-check {
+  display: inline-block;
+  font-size: 0.8rem;
+  color: grey;
+  margin-left: 55px;
+  vertical-align: bottom;
 }
